@@ -18,6 +18,13 @@ public class Main {
 		login.setVisible(true);
 		login.setLocationRelativeTo(null);
 		login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		MainInterface mainInf = new MainInterface();
+		mainInf.setTitle("Application MainInterface");
+		mainInf.setSize(920, 590);
+		mainInf.setVisible(true);
+		mainInf.setLocationRelativeTo(null);
+		mainInf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }
