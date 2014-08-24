@@ -13,6 +13,7 @@ public class Main {
 	
 	public static void main(String[] args){
 		LogIn login = new LogIn();
+		login.setTitle("Entrance Panel");
 		login.setSize(500, 430);
 		login.setVisible(true);
 		login.setLocationRelativeTo(null);

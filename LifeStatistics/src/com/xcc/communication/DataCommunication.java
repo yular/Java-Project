@@ -66,4 +66,12 @@ public class DataCommunication {
 		}
 		
 	}
+	
+	public boolean checkUserExist(){
+		return true;
+	}
+	
+	public void addUserRecord(){
+		
+	}
 }

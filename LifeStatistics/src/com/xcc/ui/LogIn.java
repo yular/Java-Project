@@ -4,6 +4,8 @@ import javax.swing.*;
 import javax.sql.*;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LogIn extends JFrame{
 	
@@ -43,5 +45,25 @@ public class LogIn extends JFrame{
 		boxUser.setBounds(50, 260, 320, 20);
 		boxPW.setBounds(50, 300, 320, 20);
 		boxBtn.setBounds(100, 330, 500, 50);
+		
+		logIn.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
+		
+		sigIn.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
 	}
 }
