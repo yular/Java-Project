@@ -19,6 +19,9 @@ public class MainInterface extends JFrame{
 	private JPanel notification;
 	private JLabel titleWords = new JLabel("Welcome");
 	private JButton logout = new JButton("Log Out");
+	
+	private JScrollPane scrollpane;
+	
 	private Box userTitle = Box.createHorizontalBox();
 	private Box mainTab = Box.createHorizontalBox();
 	
@@ -29,7 +32,7 @@ public class MainInterface extends JFrame{
 		userTitle.add(Box.createHorizontalStrut(20));
 		userTitle.add(logout);
 		
-		activity = createInnerPanel("Activities");
+		activity = createActivityPanel();
 		mainJTab.addTab("Activities", activity);
 		profile = createInnerPanel("profiles");
 		mainJTab.addTab("Profile", profile);
@@ -59,6 +62,18 @@ public class MainInterface extends JFrame{
 		jlbDisplay.setHorizontalAlignment(JLabel.CENTER);
 		jplPanel.setLayout(new GridLayout(1, 1));
 		jplPanel.add(jlbDisplay);
+		return jplPanel;
+	}
+	
+	protected JPanel createActivityPanel() {
+		JPanel jplPanel = new JPanel();
+		JLabel jlbDisplay = new JLabel("					Hello World!");
+		jlbDisplay.setSize(890, 490);
+		scrollpane = new JScrollPane(jlbDisplay,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, 
+				JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		jplPanel.setLayout(new GridLayout(1, 1));
+		jplPanel.add(scrollpane);
+		
 		return jplPanel;
 	}
 	
